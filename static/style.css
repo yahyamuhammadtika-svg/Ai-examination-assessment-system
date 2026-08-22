@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f5f7fb;
+    color: #172033;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    min-height: 68px;
+    background: #111827;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 7%;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main {
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #172554, #0f766e);
+    color: white;
+    padding: 42px;
+    border-radius: 22px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    display: block;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 25px;
+    text-decoration: none;
+    color: #172033;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.panel {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0;
+    border: 1px solid #ccd3df;
+    border-radius: 10px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.question {
+    margin: 28px 0;
+}
+
+.question label {
+    display: block;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+button {
+    background: #0f766e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 22px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #115e59;
+}
+
+.score {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.result {
+    border-top: 1px solid #e5e7eb;
+    padding: 18px 0;
+}
+
+.info,
+.warning {
+    padding: 16px;
+    background: #fff7ed;
+    border-radius: 12px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    main {
+        margin-top: 25px;
+    }
+}
